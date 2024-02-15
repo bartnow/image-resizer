@@ -25,7 +25,7 @@ function getParams(req){
     let format = req.query.f ? req.query.f : req.query.format;
     let fit = (req.query.fit ? req.query.fit : config.DefaultImageFitPolicy).toLowerCase();
 
-    if( !(fit == 'cover' || fit == 'contain') ){
+    if( !(fit == 'cover' || fit == 'contain' || fit == 'fill' || fit == 'inside' || fit == 'outside') ){
         // Fall back to default
         fit = config.DefaultImageFitPolicy.toLocaleString();
     }
