@@ -24,6 +24,7 @@ http://localhost:8080/resize?url={imageurl}&h={height}&w={width}&f={format}
 * `w` or `width` `(int: required)`
 * `f` or `format` `(possible values: png | jpg | tiff | webp)`
 * `fit` `(possible values: cover | contain)`
+* bartnow: "fit" extended to also accept 'fill' 'inside' 'outside'
 
 For example, the http request to resize an image from "http://cdn.shahed.ca/default.jpg" into 100x100 pixel image of PNG format would look like this:
 
